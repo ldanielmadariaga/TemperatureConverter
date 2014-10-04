@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myColor"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.monkeybusiness.android.temperatureconverter.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <EditText
+        android:id="@id/temperatureToCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="17dp"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal" >
+    </EditText>
+
+    <RadioGroup
+        android:id="@id/temperaturesRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/temperatureToCalculate"
+        android:layout_below="@id/temperatureToCalculate" >
+
+        <RadioButton
+            android:id="@id/celsiusRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/celsius" />
+
+        <RadioButton
+            android:id="@id/fahrenheitRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fahrenheit" />
+    </RadioGroup>
+
+    <Button
+        android:id="@id/calculateTemperatureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/temperaturesRadioGroup"
+        android:layout_below="@id/temperaturesRadioGroup"
+        android:layout_marginTop="22dp"
+        android:onClick="onClick"
+        android:text="@string/calculate" />
+
+</RelativeLayout>

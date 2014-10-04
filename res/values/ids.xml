@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="calculateTemperatureButton" type="id"/>
+    <item name="celsiusRadio" type="id"/>
+    <item name="fahrenheitRadio" type="id"/>
+    <item name="temperatureToCalculate" type="id"/>
+    <item name="temperaturesRadioGroup" type="id"/>
+
+</resources>
